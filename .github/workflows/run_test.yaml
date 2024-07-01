@@ -1,9 +1,11 @@
 name: Test Run
 on:
+  pull_request:
+    branches:
+      - '*'
   push:
-     '*'
-  commit:
-     '*'
+    branches:
+      - 'master'
 
 jobs:
   build:
